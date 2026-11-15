@@ -1,6 +1,6 @@
 # HE68 Pro configurator 
 
-The ATOM HE68 by Fantech is a really good and amazing keyboard for a budget, Although the configurator is not unleashed to it's full potential.
+The ATOM HE68 PRO by Fantech is a really good and amazing keyboard for a budget, Although the configurator is not unleashed to it's full potential.
 
 This started out because I found out that using FN + CTRL to switch to the F keys is really annoying and time consuming, So I started to patch their configurator to unlock the features, Like the FN Layer.
 
