@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+original-profiles/
+saved-profiles/
+*Fn-backup*.json
+*.exe
+*.bin
+*.hex

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="connect-src &#39;self&#39;; img-src &#39;self&#39; data: blob:; font-src &#39;self&#39; data:; object-src &#39;none&#39;; base-uri &#39;self&#39;"><script src="./pages-base.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HE68 Pro — Onboard Profile Test</title>
+<style>
+body{background:#202124;color:#eee;font:16px system-ui;max-width:850px;margin:45px auto;padding:20px;line-height:1.6}button{padding:12px 18px;margin:5px;border:0;border-radius:8px;background:#ff7900;color:#111;font:inherit;cursor:pointer}button:disabled{opacity:.4;cursor:default}pre{white-space:pre-wrap;background:#141516;padding:18px;border-radius:8px}a{color:#ff963c}strong{color:#ff963c}
+</style>
+<h1>Test onboard profile switching</h1>
+<p>Close the main editor tab before connecting here. This test is for the wired
+HE68 Pro MK922, firmware 1.16 / frame version 0. It tests hardware slots;
+it does not install your named browser profiles into them.</p>
+<ol>
+<li>Connect and note the reported slot number.</li>
+<li>Install the two test shortcuts. The current Fn map is backed up first.</li>
+<li>Press <strong>Fn + Delete</strong>, then click <strong>Read active slot</strong>.
+An increase from 0 to 1 would confirm the second slot.</li>
+<li>If Fn + Insert does not return you to slot 0, install the shortcuts in the
+new slot too, then press <strong>Fn + Insert</strong> and read again.</li>
+<li>Use <strong>Restore this slot's Fn map</strong> in each modified slot when done.</li>
+</ol>
+<p>The test changes only Fn + Insert and Fn + Delete in the active slot. Slot
+switching may change your active lighting and key settings. Each slot's first
+backup is kept in this browser and downloaded before any write.</p>
+<button id="connect">Connect keyboard</button>
+<button id="read" disabled>Read active slot</button>
+<button id="install" disabled>Install test shortcuts in this slot</button>
+<button id="restore" disabled>Restore this slot's Fn map</button>
+<pre id="log" aria-live="polite">Ready. No keyboard settings have been changed.</pre>
+<p><a href="./">Back to editor</a> — reload the editor after testing to refresh its cached settings.</p>
+<script type="module" src="./profile-test.js"></script>
+</html>
