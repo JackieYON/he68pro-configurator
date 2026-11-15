@@ -1,36 +1,10 @@
-# HE68 Pro configurator — GitHub Pages copy
+# HE68 Pro configurator 
 
-An unofficial, locally patched archive of the Fantech HE68 Pro web configurator.
-The publishable site is in **docs/**. The original local editor is unchanged.
+The ATOM HE68 by Fantech is a really good and amazing keyboard for a budget, Although the configurator is not unleashed to it's full potential.
 
-## Publish and use
+This started out because I found out that using FN + CTRL to switch to the F keys is really annoying and time consuming, So I started to patch their configurator to unlock the features, Like the FN Layer.
 
-Upload this directory to your own GitHub repository and configure GitHub Pages
-to publish the **docs/** directory from your chosen branch. Visit the resulting
-HTTPS URL in Brave or another Chromium browser with WebHID support. Connect the
-keyboard by USB and authorize it on that site. No local Python server is needed
-when using the hosted HTTPS site.
-
-Repository names and custom domains are supported: assets use the deployment
-directory, and application navigation uses hash routes such as
-`https://USERNAME.github.io/REPOSITORY/#/custom-keys`.
-
-The Fn editor is enabled by default. Fn remapping was confirmed by the owner on
-an MK922 with developer-provided firmware 1.16. Other firmware is unverified.
-The included experimental profile test produced no observed onboard slot switch
-on that build; it is not a working onboard-profile feature.
-
-## Privacy and settings
-
-- Personal profiles, import seeding, Fn-map backups, original exports and firmware
-  binaries are excluded from this copy.
-- Browser permissions and profile storage are separate from the local editor.
-  Authorize the keyboard again and use the editor's export/import controls to
-  transfer any profiles you choose. Do not commit personal exports to a public repo.
-- Assigning keys writes to the keyboard. The site does not auto-apply a custom
-  Fn map or personal preset at startup.
-- External API connections, images and fonts are blocked with a CSP. Cloud
-  features and online updates are unavailable. Bundled UI translations remain.
+I don't know if i will be able to unlock more features, But the time will come.
 
 ## Files and rights
 
